@@ -1,2 +1,2 @@
-require("lua.core.keymaps")
-require("lua.core.options")
+require("core.keymaps")
+require("core.options")
