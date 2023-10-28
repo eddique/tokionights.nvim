@@ -1,3 +1,3 @@
-require('lua.eddique.plugins.lsp.lspconfig')
-require('lua.eddique.plugins.lsp.mason')
-require('lua.eddique.plugins.lsp.none-ls')
+require('eddique.plugins.lsp.lspconfig')
+require('eddique.plugins.lsp.mason')
+require('eddique.plugins.lsp.none-ls')
