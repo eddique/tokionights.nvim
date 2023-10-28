@@ -21,6 +21,7 @@ return {
         'folke/neodev.nvim',
       },
     },
+    { 'folke/which-key.nvim', opts = {} },
     {
       -- Autocompletion
       'hrsh7th/nvim-cmp',
