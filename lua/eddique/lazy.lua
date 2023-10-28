@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "eddique.plugins" } }, {
+require("lazy").setup({ { import = "eddique.plugins" }, { import = "eddique.plugins.lsp" } }, {
   install = {
     colorscheme = { "tokyonight" },
   },
