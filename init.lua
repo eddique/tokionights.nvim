@@ -1,2 +1,2 @@
-require("core")
-require("lua.lazy")
+require("eddique.core")
+require("eddique.lazy")
