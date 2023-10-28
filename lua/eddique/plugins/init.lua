@@ -37,4 +37,5 @@ return {
         'rafamadriz/friendly-snippets',
       },
     },
+    require('plugins.lsp')
   }
