@@ -1,3 +1,9 @@
-require('eddique.plugins.lsp.lspconfig')
-require('eddique.plugins.lsp.mason')
-require('eddique.plugins.lsp.none-ls')
+local lspconfig = require("lspconfig")
+local mason = require("mason")
+local none_ls = require("none-ls")
+
+return {
+  lspconfig = lspconfig,
+  mason = mason,
+  none_ls = none_ls,
+}
