@@ -10,7 +10,8 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-
+require("eddique.plugins.lsp.lspconfig")
+require("eddique.plugins.lsp.mason")
 require("lazy").setup({ 
   { import = "eddique.plugins" },
   { import = "eddique.plugins.lsp" },
