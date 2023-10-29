@@ -58,6 +58,19 @@ return {
         -- auto-install configured servers (with lspconfig)
         automatic_installation = true, -- not the same as ensure_installed
       })
+      require'lspconfig'.eslint.setup {
+        -- Copied from nvim-lspconfig/lua/lspconfig/server_conigurations/eslint.js
+        root_dir = util.root_pattern(
+         '.eslintrc',
+         '.eslintrc.js',
+         '.eslintrc.cjs',
+         '.eslintrc.yaml',
+         '.eslintrc.yml',
+         '.eslintrc.json'
+         -- Disabled to prevent "No ESLint configuration found" exceptions
+         -- 'package.json',
+       ), 
+      }
   
       mason_tool_installer.setup({
         ensure_installed = {
