@@ -7,6 +7,10 @@ return {
         end
     },
     {
+        'briones-gabriel/darcula-solid.nvim',
+        dependencies = { "rktjmp/lush.nvim" },
+    },
+    {
     'folke/tokyonight.nvim',
     -- priority = 1000,
     -- config = function()
