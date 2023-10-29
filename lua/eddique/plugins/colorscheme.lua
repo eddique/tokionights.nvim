@@ -7,8 +7,7 @@ return {
         end
     },
     {
-        'briones-gabriel/darcula-solid.nvim',
-        dependencies = { "rktjmp/lush.nvim" },
+        'martinsione/darkplus.nvim',
     },
     {
     'folke/tokyonight.nvim',
