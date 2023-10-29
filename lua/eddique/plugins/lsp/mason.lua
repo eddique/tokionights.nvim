@@ -15,7 +15,7 @@ return {
       local servers = {
         clangd = {},
         gopls = {},
-        pyright = {},
+        pyright = { filetypes = { 'py' }},
         rust_analyzer = {},
         tsserver = {},
         svelte_language_server = {},
