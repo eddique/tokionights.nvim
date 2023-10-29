@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "eddique.plugins" } }, {
   install = {
-    colorscheme = { "tokyonight" },
+    colorscheme = { "rose-pine" },
   },
   checker = {
     enabled = true,
