@@ -23,3 +23,16 @@ require("lazy").setup({ { import = "eddique.plugins" } }, {
     notify = false,
   },
 })
+
+require("lazy").setup({ { import = "eddique.plugins" } }, {
+  install = {
+    colorscheme = { "tokyonight" },
+  },
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})
