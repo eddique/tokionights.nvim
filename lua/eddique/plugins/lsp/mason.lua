@@ -58,7 +58,7 @@ return {
         -- auto-install configured servers (with lspconfig)
         automatic_installation = true, -- not the same as ensure_installed
       })
-      require'lspconfig'.eslint.setup {
+      require('lspconfig').eslint.setup {
         -- Copied from nvim-lspconfig/lua/lspconfig/server_conigurations/eslint.js
         root_dir = util.root_pattern(
          '.eslintrc',
