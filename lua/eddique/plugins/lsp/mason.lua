@@ -12,7 +12,21 @@ return {
       local mason_lspconfig = require("mason-lspconfig")
   
       local mason_tool_installer = require("mason-tool-installer")
-  
+      local servers = {
+        clangd = {},
+        gopls = {},
+        pyright = {},
+        rust_analyzer = {},
+        tsserver = {},
+        html = { filetypes = { 'html', 'twig', 'hbs'} },
+      
+        lua_ls = {
+          Lua = {
+            workspace = { checkThirdParty = false },
+            telemetry = { enable = false },
+          },
+        },
+      }
       -- enable mason and configure icons
       mason.setup({
         ui = {
@@ -54,5 +68,15 @@ return {
           "eslint_d", -- js linter
         },
       })
+      mason_lspconfig.setup_handlers {
+        function(server_name)
+          require('lspconfig')[server_name].setup {
+            capabilities = capabilities,
+            on_attach = on_attach,
+            settings = servers[server_name],
+            filetypes = (servers[server_name] or {}).filetypes,
+          }
+        end,
+      }
     end,
   }
