@@ -15,7 +15,7 @@ rm -rf ~/.config/nvim
 2. Clone the repo to your nvim config
 
 ```sh
-git clone https://github.com/eddique/tokionight.nvim ~/.config/nvim
+git clone https://github.com/eddique/tokionights.nvim ~/.config/nvim
 ```
 
 3. Open Neovim
