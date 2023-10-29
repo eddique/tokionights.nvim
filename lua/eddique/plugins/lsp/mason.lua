@@ -18,7 +18,6 @@ return {
         pyright = {},
         rust_analyzer = {},
         tsserver = {},
-        svelte_language_server = {},
         html = { filetypes = { 'html', 'twig', 'hbs'} },
       
         lua_ls = {
