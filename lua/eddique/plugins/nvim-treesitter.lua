@@ -23,26 +23,8 @@ return {
             enable = true,
           },
           -- ensure these language parsers are installed
-          ensure_installed = {
-            "json",
-            "javascript",
-            "typescript",
-            "tsx",
-            "yaml",
-            "html",
-            "css",
-            "prisma",
-            "markdown",
-            "markdown_inline",
-            "svelte",
-            "graphql",
-            "bash",
-            "lua",
-            "vim",
-            "dockerfile",
-            "gitignore",
-            "query",
-          },
+          -- Add languages to be installed here that you want installed for treesitter
+          ensure_installed = { 'c', 'cpp', 'go', 'lua', 'python', 'rust', 'tsx', 'javascript', 'typescript', 'vimdoc', 'vim', 'bash' },
           incremental_selection = {
             enable = true,
             keymaps = {

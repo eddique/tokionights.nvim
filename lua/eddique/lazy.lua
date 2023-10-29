@@ -17,7 +17,7 @@ require("lazy").setup({
   { import = "eddique.plugins.lsp" },
  }, {
   install = {
-    colorscheme = { "rose-pine" },
+    colorscheme = { "darkplus" },
   },
   checker = {
     enabled = true,
